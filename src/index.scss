@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #A9B2BB;
+  color: #FFFEF8;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+h1{
+  margin:0;
+}
+h4{
+  margin:0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title{
+  text-align: center; 
+  h2{
+      font-weight: 400;
+      position: relative;
+      font-size: 1.3rem;
+      bottom: 1.2rem;
+  }
+  .circle{
+      background-color: #FFFEF8;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      opacity: 0.17;
+      margin: 0 auto;
+      position: relative;
+      top: 1.90rem;
+      left: 1rem;
+    }
+    .line{
+      width: 6rem;
+      background-color: #FFFEF8;
+      height: 0.1rem;
+      margin: 0 auto;
+      position: relative;
+      bottom: 1.75rem;
+    }
+}
+
+

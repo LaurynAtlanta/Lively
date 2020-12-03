@@ -6,10 +6,10 @@ import men from '../../images/smoking.jpg';
 const modelsOptions = () => {
     return (  
         <div>
-            <div className={classes.title}>
-                <div className={classes.circle}></div>
+            <div className='title'>
+                <div className='circle'></div>
                 <h2>MODELS</h2>
-                <div className={classes.line}></div>
+                <div className='line'></div>
             </div>
             <div className={classes.options}>
                 <div className={classes.option}>

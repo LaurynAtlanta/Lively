@@ -5,13 +5,13 @@ import classes from './slider.module.scss';
 
 const Slider = () => {
     return (  
-        <div>
+        <div className={classes.slides}>
             <div className={classes.slide}>
-                <div className={classes.img}>
+                <div className={classes.image}>
                     <img src={peaches} alt=""/>
                     <p>GEORGIA | FRANK MAG</p>
                 </div>
-                <div className={classes.img}>
+                <div className={classes.image}>
                     <img src={standingfield} alt=""/>
                     <p>ROBIN | VOGUE POLAND</p>
                 </div>
