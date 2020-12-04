@@ -9,11 +9,11 @@ import classes from './featuredNews.module.scss';
 const FeaturedNews = () => {
     const [news, setNews]= useState([{image: vogue, title: 'JOSIE X VOGUE', date: 'DEC 2020'}, {image: bride, title: 'RANEY X TODAYS BRIDE', date: 'DEC 2020'}, {image: polaroid, title: 'BRIT X PAPER MAG', date: 'DEC 2020'}, {image: stretching, title: 'PHEOBE X BYBLE', date: 'DEC 2020'}]);
     const [isTablet, setIsTablet] = useState(window.innerWidth >= 600);
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth>= 1020);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth>= 900);
 
     const updateSize = () =>{
         setIsTablet(window.innerWidth>=600);
-        setIsDesktop(window.innerWidth>= 1020);
+        setIsDesktop(window.innerWidth>= 900);
     }
 
     useEffect(() => {
