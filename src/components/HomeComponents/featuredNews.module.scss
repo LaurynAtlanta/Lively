@@ -47,3 +47,22 @@
     }
 
 }
+@media (min-width: 600px){
+    .news{
+        grid-template-columns: 1fr 1fr 1fr;
+        .newsSection{
+            img{
+                height: 65%;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1020px){
+    .news{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 45vh 45vh;
+        grid-row-gap: 2rem;
+    }
+}

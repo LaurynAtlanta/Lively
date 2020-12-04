@@ -1,16 +1,13 @@
 import React from 'react';
-import Slider from '../components/HomeComponents/slider'
-import ModelsOptions from '../components/HomeComponents/modelsOptions';
-import FeaturedNews from '../components/HomeComponents/featuredNews';
-import Instagram from '../components/HomeComponents/instagram';
+import Slider from '../components/HomeComponents/slider';
+import AfterSlider from '../components/HomeComponents/afterSlider';
+
 
 const Home = () => {
     return (  
         <div>
             <Slider/>
-            <ModelsOptions/>
-            <FeaturedNews/>
-            <Instagram/>
+            <AfterSlider/>
         </div>
     );
 }

@@ -1,3 +1,7 @@
+$breakpoint-tablet: 600px;
+$breakpoint-desktop: 1024px;
+
+
 .slides{
     position: relative;
     .slide{
@@ -14,9 +18,40 @@
                 text-align: right;
                 margin-right: 2rem;
                 position: absolute;
-                bottom: 0.2rem;
+                bottom: 0.5rem;
                 left: 50%;
             }
         }
+    }
+}
+
+
+@media (min-width: $breakpoint-tablet) {
+    .slides{
+        .slide{
+            display: flex;
+            height: 50vh;
+            .image{
+                height: 50vh;
+                p{
+                    left: 55%;
+                    bottom: 1rem;
+                }
+            }
+        } 
+    }
+}
+@media (min-width: $breakpoint-desktop) {
+    .slides{
+        .slide{
+            height: 60vh;
+            .image{
+                height: 60vh;
+                p{
+                    left: 65%;
+                    bottom: 1rem;
+                }
+            }
+        } 
     }
 }
