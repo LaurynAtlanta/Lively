@@ -14,7 +14,7 @@ const modelsOptions = () => {
             <div className={classes.options}>
                 <div className={classes.option}>
                     <img src={women} alt="women"/>
-                    <h3>W</h3>
+                    <h3 style={{marginLeft: '-3px', fontSize: '5.5rem'}}>W</h3>
                 </div>
                 <div className={classes.option}>
                     <img src={men} alt="men"/>

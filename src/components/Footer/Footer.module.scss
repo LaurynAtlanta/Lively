@@ -1,6 +1,6 @@
 .footer{
     width: 100%;
-    padding: 2% 0px 2%;
+    padding: 2% 0px;
     background-color: rgba(255, 255, 255, 0.336);
     // height: 20vh;
     overflow: hidden;
@@ -24,9 +24,7 @@
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'PT Serif', serif;
     padding-bottom: 2%;
-    font-weight: lighter;
     position: relative;
     img{
         width: 2.5rem;
@@ -54,4 +52,31 @@ ul{
         padding: 10px;
         width: 1.50rem;
     }
+}
+
+@media (min-width:900px){
+    .footer{
+        padding: 1% 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .logo{
+            img{
+                width: 3.5rem;
+            }
+        }
+        .circle{
+            width: 25rem;
+            height: 25rem;
+            top: 10%;
+            left: -10%;
+        }
+    }
+    ul{
+        li{
+            padding: 5px 30px;
+            font-size: 0.9rem;
+        }
+    }
+
 }

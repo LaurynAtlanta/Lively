@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     margin: 0 2rem;
-    margin-bottom: 0.5rem;
     .option{
         margin: 20px;
         width: 40vw;
@@ -20,10 +19,20 @@
         }
         h3{
             position: absolute;
-            bottom: 28px;
-            left: 23%;
+            bottom: 23%;
+            left:  19%;
             font-size: 6rem;
             font-weight: 400;
+        }
+    }
+}
+@media (min-width:450px){
+    .options{
+        .option{
+            h3{
+                left: 25%;
+                bottom: 19%;
+            }
         }
     }
 }
@@ -35,7 +44,7 @@
             width: 35vw;
             margin: 10px 30px;
             h3{
-                left: 26%;
+                left: 28.5%;
                 bottom: 20%;
             }
         }
@@ -45,7 +54,7 @@
     .options{
         .option{
             h3{
-                left: 29.5%;
+                left: 35%;
                 bottom: 20%;
             }
         }
@@ -54,7 +63,25 @@
 
 @media (min-width: 900px){
     .options{
-        margin: 0 3rem 0 4rem;
+        margin: 0 2rem 0 3rem;
+        .option{
+            h3{
+                left: 23%;
+                bottom: 20%;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1020px){
+    .options{
+        .option{
+            h3{
+                left: 28%;
+                bottom: 20%;
+            } 
+        }
     }
 }
 @media (min-width: 1200px){
@@ -62,7 +89,10 @@
         margin: 0 5rem 0 7rem;
         .option{
             height: 29vh;
-            
+            h3{
+                left: 30%;
+                bottom: 21%;
+            } 
         }
     }
 }
