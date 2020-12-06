@@ -1,0 +1,21 @@
+.model{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.7vh;
+    position: relative;
+    margin-bottom: 3vh;
+    width: 85%;
+    height: 38vh;
+    img{
+        width: 100%;
+        border-radius: 10px;
+        height: 90%;
+        object-fit: cover;
+    }
+    h3{
+        font-weight: 400;
+        text-align: center;
+        color: black;
+        margin-top: 1.6%;
+    }
+}
