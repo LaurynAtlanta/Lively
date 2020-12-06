@@ -1,0 +1,64 @@
+.aboutPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .aboutSection, .scoutSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+        }
+
+        .content{
+            text-align: center;
+            margin: 0 10vw;
+            h3{
+                font-weight: 400;
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                margin-bottom: 2rem;
+            }
+            span{
+                background-color: rgba(0, 0, 0, 0.308);
+                border-radius: 5px;
+                padding: 5px;
+            }
+        }
+    }
+    .aboutSection{
+        img{
+            object-position: 25% 25%;
+        }
+    }
+}
+
+@media (min-width: 900px){
+    .aboutPage{
+        .aboutSection, .scoutSection{
+            flex-direction: row;
+            justify-content: space-between;
+            .content{
+                p, li, h3{
+                    font-size: 1.1rem;
+                }
+            }
+            img{ 
+                width: 50%;
+                height: 85vh;
+            }
+        }
+        .aboutSection{
+            flex-direction: row-reverse;
+            img{
+                order: 1;
+            }
+        }
+    }
+}
