@@ -2,7 +2,8 @@ import React from 'react';
 import Home from './pages/home';
 import Contact from './pages/contact';
 import About from './pages/about';
-import Models from './pages/models';
+import FemaleModels from './pages/femalemodels';
+import MaleModels from './pages/malemodels';
 import Nav from './components/Navigation/Nav'
 import Footer from'./components/Footer/Footer';
 
@@ -13,7 +14,8 @@ function App() {
       {/* <Home/> */}
       {/* <Contact/> */}
       {/* <About/> */}
-      <Models/>
+      {/* <MaleModels/> */}
+      <FemaleModels/>
       {/* do media queries */}
       <Footer/>
     </div>

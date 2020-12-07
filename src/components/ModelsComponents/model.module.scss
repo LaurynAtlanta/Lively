@@ -1,21 +1,91 @@
 .model{
     background-color: white;
-    border-radius: 10px;
-    padding: 1.7vh;
+    border-radius: 6px;
+    padding: 1.2vh;
     position: relative;
     margin-bottom: 3vh;
-    width: 85%;
-    height: 38vh;
+    width: 95%;
+    height: 39vh;
+    cursor: pointer;
     img{
         width: 100%;
-        border-radius: 10px;
-        height: 90%;
+        border-radius: 6px;
+        height: 88%;
         object-fit: cover;
+        transition: all 0.3s ease;
     }
     h3{
         font-weight: 400;
         text-align: center;
-        color: black;
-        margin-top: 1.6%;
+        color: rgba(0, 0, 0, 0.74);
+        font-size:1.2rem;
+        text-transform: uppercase;
+        margin-top: 1.80%;
+    }
+}
+.model:hover{
+    img{
+        opacity: 0.3;
+    }
+}
+@media (min-width: 700px){
+    .model{
+        width: 44%;
+        height: 35vh;
+        padding: 1vh;
+        img{
+            height: 88%;
+            
+        }
+        h3{
+            font-size: 1.1rem;
+            margin-top: 1.60%;
+        }
+    }
+}
+@media (min-width: 900px){
+    .model{
+        width: 45%;
+        height: 42vh;
+        padding: 1vh;
+        margin: 0.4rem;
+        img{
+            height: 88%;
+            
+        }
+        h3{
+            font-size: 1.1rem;
+            margin-top: 1.60%;
+        }
+    }
+}
+@media (min-width: 1020px){
+    .model{
+        width: 22%;
+        height: 30vh;
+        padding: 1vh;
+        img{
+            height: 88%;
+            
+        }
+        h3{
+            font-size: 1.1rem;
+            margin-top: 1.60%;
+        }
+    }
+}
+@media (min-width: 1200px){
+    .model{
+        width: 22.5%;
+        height: 38vh;
+        padding: 1vh;
+        img{
+            height: 88%;
+            
+        }
+        h3{
+            font-size: 1.1rem;
+            margin-top: 1.60%;
+        }
     }
 }

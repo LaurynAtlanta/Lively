@@ -1,12 +1,11 @@
 import React from 'react';
-import wedding from '../../images/wedding.jpg';
 import classes from './model.module.scss';
 
-const Model = () => {
+const Model = (props) => {
     return (  
         <div className={classes.model}>
-            <img src={wedding} alt=""/>
-            <h3>NAME</h3>
+            <img src={props.mainImage} alt="Model Headshot"/>
+            <h3>{props.name}</h3>
         </div>
     );
 }
