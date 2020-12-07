@@ -1,11 +1,10 @@
 import React from 'react';
-import shoes from '../images/shoes.jpg';
 import classes from './contact.module.scss';
 
 const Contact = () => {
     return (  
         <div className={classes.contact}>
-            <img src={shoes} alt=""/>
+            <img src='https://images.unsplash.com/photo-1536640387894-cbc452a79a86' alt=""/>
             <div className={classes.contactus}>
                 <div className="title">
                     <div className="circle"></div>

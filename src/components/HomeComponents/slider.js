@@ -1,6 +1,4 @@
 import React from 'react';
-import peaches from '../../images/peaches.jpg'
-import standingfield from '../../images/standingfield.jpg';
 import classes from './slider.module.scss';
 
 const Slider = () => {
@@ -8,11 +6,11 @@ const Slider = () => {
         <div className={classes.slides}>
             <div className={classes.slide}>
                 <div className={classes.image}>
-                    <img src={peaches} alt=""/>
+                    <img src='https://images.unsplash.com/photo-1588746054794-744a768062eb' alt=""/>
                     <p>GEORGIA | FRANK MAG</p>
                 </div>
                 <div className={classes.image}>
-                    <img src={standingfield} alt=""/>
+                    <img src='https://images.unsplash.com/photo-1589734004800-39305a70c03c' alt=""/>
                     <p>ROBIN | VOGUE POLAND</p>
                 </div>
             </div>

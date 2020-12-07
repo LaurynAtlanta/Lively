@@ -1,6 +1,4 @@
 import React from 'react';
-import Noel from '../images/Noel.jpg';
-import sitting from '../images/sittingbuilding.jpg';
 import classes from './about.module.scss';
 
 const About = () => {
@@ -25,7 +23,7 @@ const About = () => {
                         in the world. Noels well-established agency in 
                         Manhattan is quickly achieving the same notoriety.</p>
                 </div>
-                <img src={Noel} alt=""/>
+                <img src='https://images.unsplash.com/photo-1571757219458-458797f1a901' alt=""/>
             </div>
             <div className={classes.scoutSection}>
                 <div className={classes.content}>
@@ -45,7 +43,7 @@ const About = () => {
                     <h3>Submit to: </h3>
                     <p><span>Lively-models-scout@lively.com</span></p>
                 </div>
-                <img src={sitting} alt=""/>
+                <img src='https://images.unsplash.com/photo-1595745850303-4162cf13be61' alt=""/>
             </div>
         </div>
     );

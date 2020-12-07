@@ -1,13 +1,9 @@
 import React,{useState, useEffect} from 'react';
-import vogue from '../../images/vogues.jpg';
-import bride from '../../images/wedding.jpg';
-import polaroid from '../../images/polaroid.jpg';
-import stretching from '../../images/stretching.jpg';
 import classes from './featuredNews.module.scss';
 
 
 const FeaturedNews = () => {
-    const [news, setNews]= useState([{image: vogue, title: 'JOSIE X VOGUE', date: 'DEC 2020'}, {image: bride, title: 'RANEY X TODAYS BRIDE', date: 'DEC 2020'}, {image: polaroid, title: 'BRIT X PAPER MAG', date: 'DEC 2020'}, {image: stretching, title: 'PHEOBE X BYBLE', date: 'DEC 2020'}]);
+    const [news, setNews]= useState([{image: 'https://images.unsplash.com/photo-1596382941523-f18a1ac95f53', title: 'JOSIE X VOGUE', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1596181135907-b94f2d9a04ea', title: 'RANEY X TODAYS BRIDE', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1602743052275-599ef803a04f', title: 'BRIT X PAPER MAG', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1541871321594-939f3f033569', title: 'PHEOBE X BYBLE', date: 'DEC 2020'}]);
     const [isTablet, setIsTablet] = useState(window.innerWidth >= 600);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth>= 900);
 

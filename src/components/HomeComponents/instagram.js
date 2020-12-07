@@ -1,10 +1,4 @@
 import React from 'react';
-import peaches from '../../images/peaches.jpg';
-import sittinginfield from '../../images/sittinginfield.jpg';
-import vogues from '../../images/vogues.jpg';
-import smoking from '../../images/smoking.jpg';
-import polaroid from '../../images/polaroid2.jpg';
-import women from '../../images/blackwhitewomen.jpg';
 import classes from './instagram.module.scss';
 
 const Instagram = () => {
@@ -17,22 +11,22 @@ const Instagram = () => {
             </div>
             <div className={classes.grid}>
                 <div className={classes.image}>
-                    <img src={peaches} alt="instagram"/>
+                    <img src='https://images.unsplash.com/photo-1588746054794-744a768062eb' alt="instagram"/>
                 </div>
                 <div className={classes.image}>
-                    <img src={sittinginfield} alt="instagram"/>
+                    <img src='https://images.unsplash.com/photo-1564568876462-0815e76d513a' alt="instagram"/>
                 </div>
                 <div className={classes.image}>
-                    <img src={vogues} alt="instagram"/>
+                    <img src='https://images.unsplash.com/photo-1596382941523-f18a1ac95f53' alt="instagram"/>
                 </div>
                 <div className={classes.image}>
-                    <img src={smoking} alt="instagram"/>
+                    <img src='https://images.unsplash.com/photo-1536303158031-c868b371399f' alt="instagram"/>
                 </div>
                 <div className={classes.image}>
-                    <img src={polaroid} alt="instagram"/>
+                    <img src='https://images.unsplash.com/photo-1602743052275-599ef803a04f' alt="instagram"/>
                 </div>
                 <div className={classes.image}>
-                    <img src={women} alt="instagram"/>
+                    <img src='https://images.unsplash.com/photo-1582749650161-289d7e4249e2' alt="instagram"/>
                 </div>
             </div>
         </div>
