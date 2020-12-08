@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import classes from './Nav.module.scss';
 import logo from '../../images/logo.svg';
+import {Link} from 'react-router-dom';
 
 const Nav = () => {
     const [clicked, setClicked] = useState(false);
@@ -12,20 +13,22 @@ const Nav = () => {
     return (  
         <nav>
             <ul className={clicked? `${classes.show} ${classes.left}`: classes.left}>
-                <li>WOMEN</li>
-                <li>MEN</li>
+                <li><Link id="logo" to="/women">WOMEN</Link></li>
+                <li><Link id="logo" to="/men">MEN</Link></li>
             </ul>
             <div className={classes.burger} onClick={toggleHandler}>
                 <div className={classes.navline}></div>
                 <div className={classes.navline}></div>
                 <div className={classes.navline}></div>
             </div>
+            <Link id="logo" to="/">
             <div className={classes.logo}>
                 <img src={logo} alt="Logo"/>
             </div>
+            </Link>
             <ul className={clicked? `${classes.show} ${classes.right}`: classes.right}>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+                <li><Link id="logo" to="/about">ABOUT</Link></li>
+                <li><Link id="logo" to="/contact">CONTACT</Link></li>
             </ul>
         </nav>
     );

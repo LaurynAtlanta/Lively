@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import classes from './featuredNews.module.scss';
+import {Link} from 'react-router-dom';
 
 
 const FeaturedNews = () => {
@@ -59,7 +60,9 @@ const FeaturedNews = () => {
                 </div>
             ): null}
             </div>
-            <button className={classes.readmorebutton}>READ MORE</button>
+            <Link id="logo" to="/about">
+                <button className={classes.readmorebutton}>READ MORE</button>
+            </Link>
         </div>
     );
 }

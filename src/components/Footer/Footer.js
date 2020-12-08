@@ -4,6 +4,7 @@ import secondaryLogo from '../../images/SecondaryLogo.svg';
 import facebook from '../../images/facebook.svg';
 import twitter from '../../images/twitter.svg';
 import instagram from '../../images/instagram.svg';
+import {Link} from 'react-router-dom';
 
 
 
@@ -15,7 +16,7 @@ const Footer = () => {
             </div>
             <div className="links">
                 <ul>
-                    <li>CONTACT</li>
+                    <li><Link id="logo" to="/women">CONTACT</Link></li>
                     <li>NEWSLETTER</li>
                     <li>PRIVACY POLICY</li>
                 </ul>

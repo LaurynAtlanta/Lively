@@ -6,17 +6,27 @@ import FemaleModels from './pages/femalemodels';
 import MaleModels from './pages/malemodels';
 import Nav from './components/Navigation/Nav'
 import Footer from'./components/Footer/Footer';
+import {Route} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Nav/>
-      <Home/>
-      {/* <Contact/> */}
-      {/* <About/> */}
-      {/* <MaleModels/> */}
-      {/* <FemaleModels/> */}
-      {/* do media queries */}
+        <Route path='/' exact>
+          <Home/>
+        </Route>
+        <Route path='/men' exact>
+          <MaleModels/>
+        </Route>
+        <Route path='/women' exact>
+          <FemaleModels/>
+        </Route>
+        <Route path='/contact' exact>
+          <Contact/>
+        </Route>
+        <Route path='/about' exact>
+          <About/>
+        </Route>
       <Footer/>
     </div>
   );
