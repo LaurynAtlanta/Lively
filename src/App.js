@@ -8,6 +8,15 @@ import Nav from './components/Navigation/Nav'
 import Footer from'./components/Footer/Footer';
 import {Route} from 'react-router-dom';
 
+
+const observer = new PerformanceObserver((list) => {
+  console.log('Long Task detected! 🚩️');
+  const entries = list.getEntries();
+  console.log(entries);
+});
+
+observer.observe({entryTypes: ['longtask']});
+
 function App() {
   return (
     <div className="App">

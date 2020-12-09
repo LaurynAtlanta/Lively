@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 const FeaturedNews = () => {
-    const [news, setNews]= useState([{image: 'https://images.unsplash.com/photo-1596382941523-f18a1ac95f53', title: 'JOSIE X VOGUE', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1596181135907-b94f2d9a04ea', title: 'RANEY X TODAYS BRIDE', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1602743052275-599ef803a04f', title: 'BRIT X PAPER MAG', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1541871321594-939f3f033569', title: 'PHEOBE X BYBLE', date: 'DEC 2020'}]);
+    const [news, setNews]= useState([{image: 'https://images.unsplash.com/photo-1596382941523-f18a1ac95f53?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&h=500&q=80', title: 'JOSIE X VOGUE', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1596181135907-b94f2d9a04ea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&h=300&q=80', title: 'RANEY X TODAYS BRIDE', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1602743052275-599ef803a04f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&h=500&q=80', title: 'BRIT X PAPER MAG', date: 'DEC 2020'}, {image: 'https://images.unsplash.com/photo-1541871321594-939f3f033569?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80', title: 'PHEOBE X BYBLE', date: 'DEC 2020'}]);
     const [isTablet, setIsTablet] = useState(window.innerWidth >= 600);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth>= 900);
 

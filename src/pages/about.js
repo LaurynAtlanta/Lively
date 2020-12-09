@@ -23,7 +23,7 @@ const About = () => {
                         in the world. Noels well-established agency in 
                         Manhattan is quickly achieving the same notoriety.</p>
                 </div>
-                <img src='https://images.unsplash.com/photo-1571757219458-458797f1a901' alt=""/>
+                <img src='https://images.unsplash.com/photo-1571757219458-458797f1a901?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80' alt=""/>
             </div>
             <div className={classes.scoutSection}>
                 <div className={classes.content}>
@@ -43,7 +43,7 @@ const About = () => {
                     <h3>Submit to: </h3>
                     <p><span>Lively-models-scout@lively.com</span></p>
                 </div>
-                <img src='https://images.unsplash.com/photo-1595745850303-4162cf13be61' alt=""/>
+                <img src='https://images.unsplash.com/photo-1595745850303-4162cf13be61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80' alt=""/>
             </div>
         </div>
     );

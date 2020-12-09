@@ -5,7 +5,7 @@ import AfterSlider from '../components/HomeComponents/afterSlider';
 
 const Home = () => {
     return (  
-        <div>
+        <div className='home'>
             <Slider/>
             <AfterSlider/>
         </div>
