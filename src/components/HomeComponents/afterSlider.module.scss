@@ -1,5 +1,22 @@
+.AfterSlider{
+    margin: 3.5vh 0;
+} 
+
 @media(min-width:900px){
     .AfterSlider{
+        margin: 7vh 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40% 60%;
+        .news{
+            grid-column: 2 / 3;
+            grid-row: 1 / span 2;
+        }
+    }
+}
+@media(min-width:1020px){
+    .AfterSlider{
+        margin: 7vh 0;
         display: grid;
         grid-template-columns: 55% 45%;
         grid-template-rows: 40% 60%;
