@@ -1,10 +1,20 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import classes from './contact.module.scss';
+import {TimelineLite, Power3} from 'gsap';
 
 const Contact = () => {
+
+    let image = useRef(null);
+
+    useEffect(()=> {
+        let tl = new TimelineLite();
+        tl.from(image, 1, {x: -2000, ease: Power3, opacity: 0, zIndex: 10})
+    },[])
+
+
     return (  
         <div className={classes.contact}>
-            <img src='https://images.unsplash.com/photo-1536640387894-cbc452a79a86?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80' alt=""/>
+            <img ref={el => image = el} src='https://images.unsplash.com/photo-1536640387894-cbc452a79a86?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80' alt=""/>
             <div className={classes.contactus}>
                 <div className="title">
                     <div className="circle"></div>

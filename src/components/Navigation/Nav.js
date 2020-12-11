@@ -3,18 +3,17 @@ import classes from './Nav.module.scss';
 import logo from '../../images/logo.svg';
 import {Link} from 'react-router-dom';
 
-const Nav = () => {
+const Nav = (props) => {
     const [clicked, setClicked] = useState(false);
     const toggleHandler= () => {
         setClicked(!clicked);
     }
 
-
     return (  
         <nav>
             <ul className={clicked? `${classes.show} ${classes.left}`: classes.left}>
-                <li><Link id="logo" to="/women">WOMEN</Link></li>
-                <li><Link id="logo" to="/men">MEN</Link></li>
+                <li><Link id="logo" to="/Women">WOMEN</Link></li>
+                <li><Link id="logo" to="/Men">MEN</Link></li>
             </ul>
             <div className={classes.burger} onClick={toggleHandler}>
                 <div className={classes.navline}></div>

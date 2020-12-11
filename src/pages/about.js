@@ -1,9 +1,38 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import classes from './about.module.scss';
+import {gsap, TimelineLite, Power3} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+    let content = useRef(null);
+    let about = useRef(null);
+
+    useEffect(()=> {
+
+        gsap.fromTo(content, {
+            autoAlpha: 0
+        }, {
+            duration: 0.5,
+            autoAlpha: 1,
+            ease: Power3,
+            scrollTrigger: {
+                trigger: content,
+                start: 'top bottom-=100px',
+                toggleActions: 'play none none reverse'
+            }
+        });
+    })
+    
+    useEffect(()=> {
+        let tl = new TimelineLite();
+        tl.from(about, 1, {y: +2000, ease: Power3, opacity: 0, zIndex: 10});
+    
+    },[])
+
+
     return (  
-        <div className={classes.aboutPage}>
+        <div className={classes.aboutPage} ref={el => about = el}>
             <div className={classes.aboutSection}>
                 <div className={classes.content}>
                     <div className="title">
@@ -26,7 +55,7 @@ const About = () => {
                 <img src='https://images.unsplash.com/photo-1571757219458-458797f1a901?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80' alt=""/>
             </div>
             <div className={classes.scoutSection}>
-                <div className={classes.content}>
+                <div className={classes.content} ref={el => content = el}>
                     <div className="title">
                         <div className="circle"></div>
                         <h2>GET SCOUTED</h2>

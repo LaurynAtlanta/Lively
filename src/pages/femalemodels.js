@@ -3,7 +3,7 @@ import Model from '../components/ModelsComponents/model';
 import classes from './models.module.scss';
 import axios from '../axios-models';
 
-const FemaleModels = () => {
+const FemaleModels = (props) => {
     const [FemaleModels, setFemaleModels]= useState(null)
     useEffect(()=> {
         axios.get('https://lively-fe765.firebaseio.com/Models/Women.json')
@@ -22,7 +22,9 @@ const FemaleModels = () => {
                 return <Model 
                             name={FemaleModels[model].name} 
                             mainImage={FemaleModels[model].mainImage}
-                            key={FemaleModels[model.name]}/>
+                            key={FemaleModels[model].name}
+                            id={FemaleModels[model].id}
+                            setModel={props.setModel}/>
             })
         )
     }

@@ -3,7 +3,7 @@ import ModelsOptions from '../HomeComponents/modelsOptions'
 import FeaturedNews from '../HomeComponents/featuredNews';
 import Instagram from '../HomeComponents/instagram';
 import classes from './afterSlider.module.scss';
-import {gsap, TimelineLite} from 'gsap';
+import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -24,7 +24,7 @@ const AfterSlider = () => {
             scrollTrigger: {
                 trigger: newsRef,
                 start: 'top bottom-=100px',
-                toggleActions: 'play none none reverse'
+                toggleActions: 'play none none'
             }
         });
         gsap.fromTo(modelsRef, {
@@ -36,7 +36,7 @@ const AfterSlider = () => {
             scrollTrigger: {
                 trigger: modelsRef,
                 start: 'top bottom-=100px',
-                toggleActions: 'play none none reverse'
+                toggleActions: 'play none none'
             }
         });
         gsap.fromTo(instaRef, {
@@ -48,7 +48,7 @@ const AfterSlider = () => {
             scrollTrigger: {
                 trigger: instaRef,
                 start: 'top bottom-=100px',
-                toggleActions: 'play none none reverse'
+                toggleActions: 'play none none'
             }
         });
 
