@@ -23,7 +23,6 @@ const FemaleModels = (props) => {
                             name={FemaleModels[model].name} 
                             mainImage={FemaleModels[model].mainImage}
                             key={FemaleModels[model].name}
-                            id={FemaleModels[model].id}
                             setModel={props.setModel}/>
             })
         )

@@ -1,9 +1,20 @@
 import React, {useRef, useEffect} from 'react';
 import classes from './model.module.scss';
 import {TimelineLite, Power3} from 'gsap';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 const Model = (props) => {
+    let location = useLocation();
+
+    // let gender;
+
+    //     if(location.pathname === '/Men'){
+    //         gender = '/Men';
+    //     } else if (location.pathname === '/Women'){
+    //         gender = '/Women';
+    //     }
+    //     console.log(gender);
+
     
     let model = useRef(null);
 
@@ -21,7 +32,7 @@ const Model = (props) => {
             {/* =======================================================
             this needs to link to either men or women with props.name
             ======================================================= */}
-            <Link to={`/Women/${props.name}`} onClick={modelHandler}>
+            <Link to={`${location.pathname}/${props.name}`} onClick={modelHandler}>
             <img src={props.mainImage} alt="Model Headshot"/>
             <h3>{props.name}</h3>
             </Link>
