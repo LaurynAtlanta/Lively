@@ -1,8 +1,22 @@
 .singleModel{
-    img{
-        width:100vw;
-        height: 40vh;
-        object-fit: cover;
+    margin-bottom: 2rem;
+    .singleImageSlider{
+        h4{
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+            width: 150px;
+            cursor: pointer;
+            .back{
+                margin-right: 1rem;
+                margin-left: 2rem;
+            }
+        }
+        h4:hover{
+            opacity: 1;
+        }
     }
     .details{
         .about{
@@ -47,9 +61,9 @@
             margin: 2rem 0;
             ul{
                 display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
                 
                 li{
                     text-transform: uppercase;
@@ -59,4 +73,91 @@
             }
         }
     }
+}
+
+@media (min-width: 500px) {
+    .singleModel{
+        .details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            .about{
+                h2{
+                    margin: 0rem 2vw 2rem;
+                }
+            }
+            .options{
+                margin-top: 14vh;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .singleModel{
+        .details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            margin-left: 5%;
+        }
+    }
+}
+@media (min-width: 1020px) {
+    .singleModel{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .singleImageSlider{
+            margin-left: 2%;
+            margin-left: 0rem;
+            width: 45%;
+        }
+        .details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            .options{
+                ul{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+    
+  
+}
+@media (min-width: 1100px) {
+    .singleModel{
+        
+        .singleImageSlider{
+            margin-right: 50px;
+        }
+        .details{
+            .about{
+                .info{
+                    ul{
+                        margin-right: 1rem;
+                        li{
+                            font-weight: bold;
+                            padding-left: 0;
+                            font-size: 1rem;
+                            letter-spacing: 0.06rem;
+                            span{
+                                font-weight: normal;
+                                padding-left: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+  
 }

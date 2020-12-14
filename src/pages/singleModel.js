@@ -2,12 +2,19 @@ import React,{useEffect, useState} from 'react';
 import SingleSlider from '../components/ModelsComponents/singleSlider';
 import axios from '../axios-models';
 import classes from './singleModel.module.scss';
-import { useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 const SingleModel = (props) => {
+    let history = useHistory();
     const [single, setSingle]= useState(null);
     let location = useLocation();
     let singleModelContent;
+
+    let goBackHandler = () => {
+        history.goBack();
+    }
 
     useEffect(()=> {
         axios.get(`https://lively-fe765.firebaseio.com/Models${location.pathname}.json`)
@@ -22,8 +29,14 @@ const SingleModel = (props) => {
     if(single){
         singleModelContent = (
             <div className={classes.singleModel}>
-                <SingleSlider/>
-                <img src={single.mainImage} alt=""/>
+                <div className={classes.singleImageSlider}>
+                    <h4 onClick={goBackHandler}> <FontAwesomeIcon icon={faChevronLeft} className={classes.back}/>Back</h4>
+                    <SingleSlider 
+                        firstImage={single.firstImage}
+                        secondImage={single.secondImage}
+                        thirdImage={single.thirdImage}
+                        fourthImage={single.fourthImage}/>
+                </div>
                 <div className={classes.details}>
                     <div className={classes.about}>
                         <h2 className='name'>{single.name}</h2>
