@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Lively/static/css/main.6f51d71a.chunk.css",
+    "main.js": "/Lively/static/js/main.6ca11342.chunk.js",
+    "main.js.map": "/Lively/static/js/main.6ca11342.chunk.js.map",
+    "runtime-main.js": "/Lively/static/js/runtime-main.ead15526.js",
+    "runtime-main.js.map": "/Lively/static/js/runtime-main.ead15526.js.map",
+    "static/js/2.9da04d9f.chunk.js": "/Lively/static/js/2.9da04d9f.chunk.js",
+    "static/js/2.9da04d9f.chunk.js.map": "/Lively/static/js/2.9da04d9f.chunk.js.map",
+    "static/js/3.e3e511a9.chunk.js": "/Lively/static/js/3.e3e511a9.chunk.js",
+    "static/js/3.e3e511a9.chunk.js.map": "/Lively/static/js/3.e3e511a9.chunk.js.map",
+    "index.html": "/Lively/index.html",
+    "static/css/main.6f51d71a.chunk.css.map": "/Lively/static/css/main.6f51d71a.chunk.css.map",
+    "static/js/2.9da04d9f.chunk.js.LICENSE.txt": "/Lively/static/js/2.9da04d9f.chunk.js.LICENSE.txt",
+    "static/media/SecondaryLogo.1656ff74.svg": "/Lively/static/media/SecondaryLogo.1656ff74.svg",
+    "static/media/facebook.2ceaf2e0.svg": "/Lively/static/media/facebook.2ceaf2e0.svg",
+    "static/media/instagram.7517a2b6.svg": "/Lively/static/media/instagram.7517a2b6.svg",
+    "static/media/logo.556beb83.svg": "/Lively/static/media/logo.556beb83.svg",
+    "static/media/twitter.a404b4c8.svg": "/Lively/static/media/twitter.a404b4c8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ead15526.js",
+    "static/js/2.9da04d9f.chunk.js",
+    "static/css/main.6f51d71a.chunk.css",
+    "static/js/main.6ca11342.chunk.js"
+  ]
+}
